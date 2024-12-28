@@ -7,7 +7,7 @@ namespace MicrobloggingApp.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    //[Authorize]
+    [Authorize]
     public class PostsController : ControllerBase
     {
         private readonly IPostService _postService;

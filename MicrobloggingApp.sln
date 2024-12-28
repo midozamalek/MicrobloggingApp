@@ -5,6 +5,8 @@ VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrobloggingApp", "MicrobloggingApp.csproj", "{5EAEB924-FF3E-47C1-B4AC-941A5BE0F54D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeLineMVC", "..\TimeLineMVC\TimeLineMVC.csproj", "{14B2DD3F-52A8-4AA8-8DB9-6DA413C2B828}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5EAEB924-FF3E-47C1-B4AC-941A5BE0F54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5EAEB924-FF3E-47C1-B4AC-941A5BE0F54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EAEB924-FF3E-47C1-B4AC-941A5BE0F54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B2DD3F-52A8-4AA8-8DB9-6DA413C2B828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B2DD3F-52A8-4AA8-8DB9-6DA413C2B828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B2DD3F-52A8-4AA8-8DB9-6DA413C2B828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B2DD3F-52A8-4AA8-8DB9-6DA413C2B828}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
