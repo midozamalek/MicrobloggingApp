@@ -1,6 +1,10 @@
 
 using MicrobloggingApp.AuthenticationModule.Services;
+using MicrobloggingApp.Domain;
+using MicrobloggingApp.Domain.Services;
+using MicrobloggingApp.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -21,6 +25,14 @@ namespace MicrobloggingApp
 
             builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
             builder.Services.AddScoped<ITokenService, TokenService>();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+            );
+
+            builder.Services.AddScoped<IAzureStorageService, AzureStorageService>();
+            builder.Services.AddScoped<IPostService, PostService>();
+            builder.Services.AddHttpContextAccessor();
 
 
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
